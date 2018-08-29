@@ -26,7 +26,11 @@ button {
     border-radius: 2px;
     cursor: pointer;
 }
-.toc {
+a {
+    color:#00adfd;
+    text-decoration: none;
+}
+a:visited {
     color:#00adfd;
     text-decoration: none;
 }
