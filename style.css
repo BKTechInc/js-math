@@ -26,6 +26,10 @@ button {
     border-radius: 2px;
     cursor: pointer;
 }
+.toc {
+    color:#00adfd;
+    text-decoration: none;
+}
 input {
     padding:5px;
     font-family: 'Roboto', sans-serif;
