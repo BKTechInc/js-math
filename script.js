@@ -4,6 +4,6 @@ function add() {
     var numbr = Number(num1);
     var numbr2 = Number(num2);
     var answer = numbr + numbr2;
-    alert(answer);
     console.log(answer);
+    document.getElementById('addAnswer').innerHTML = answer;
 }
