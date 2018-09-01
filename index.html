@@ -11,42 +11,47 @@
 </head>
 <body>
     <h1>JS Math</h1>
-    <p id="about">JS Math is a site where developers have worked on JavaScript algorithms to create and solve basic and complex problems. We have taken a simple idea of a calculator to extreme, with easier functionality and more code. Presented by <strong>BK Tech Inc</strong>. Created and Developed by <strong>RocketBear27</strong>.</p>
+    <p id="about">JS Math is a site where developers have worked on JavaScript algorithms to create and solve basic and complex problems. We have taken a simple idea of a calculator to extreme, with easier functionality and more code. Presented by <strong>BK Tech Inc</strong>. Created and Developed by <strong>RocketBear27</strong>. Basic algorithm code below.</p>
+    <pre>
+        <code>
+            function add() {
+                // Retrieving the text value of the input
+                var num1 = document.getElementById('addNum1').value;
+                var num2 = document.getElementById('addNum2').value;
+                // Converting the text input to a number
+                var numbr = Number(num1);
+                var numbr2 = Number(num2);
+                // Adding the numbers together
+                var answer = numbr + numbr2;
+                // Logging answer
+                console.log(answer);
+                // Displaying answer in answer box
+                document.getElementById('addAnswer').innerHTML = answer;
+            }
+         </code>
+    </pre>
     <br><br>
     <h2>Table Of Contents</h2>
-    <a href="#add-sec" class="toc">Addition</a>
+    <a href="#add-sec" class="toc">Addition</a><br><br>
+    <a href="#sub-sec" class="toc">Subtraction</a>
     <br><br>
     <hr>
     <br><br>
     <h3 id="add-sec">Addition</h3>
-    <p>This input type can solve <em>addition</em>. Although this is basic fundamental math, this can be solved with the following JavaScript code.<br><br>
-        <div>
-            <pre>
-                <code>
-                     function add() {
-                        // Retrieving the text value of the input
-                        var num1 = document.getElementById('addNum1').value;
-                        var num2 = document.getElementById('addNum2').value;
-                        // Converting the text input to a number
-                        var numbr = Number(num1);
-                        var numbr2 = Number(num2);
-                        // Adding the numbers together
-                        var answer = numbr + numbr2;
-                        // Logging answer
-                        console.log(answer);
-                        // Displaying answer in answer box
-                        document.getElementById('addAnswer').innerHTML = answer;
-                    }
-                </code>
-            </pre>
-        </div>
-    </p>
     <br><br>
-    <input type="text" class="additionBox" placeholder="Number" id="addNum1"> + <input type="text" class="additionBox"
-    placeholder="Number" id="addNum2"> &nbsp;&nbsp;&nbsp;
+    <input type="text" class="additionBox" placeholder="Number" id="addNum1"> + <input type="text" class="additionBox" placeholder="Number" id="addNum2"> &nbsp;&nbsp;&nbsp;
     <button class="addCalculate" onclick="add()">Add Numbers</button>
     <br>
     <span class="answerBox"><strong>Your Answer is:</strong> <p id="addAnswer"></p></span>
+    <br><br>
+    <hr>
+    <br><br>
+    <h3 id="sub-sec">Subtraction</h3>
+    <br><br>
+    <input type="text" class="additionBox" placeholder="Number" id="subNum1"> - <input type="text" class="additionBox" placeholder="Number" id="subNum2"> &nbsp;&nbsp;&nbsp;
+    <button class="subCalculate" onclick="sub()">Subtract Numbers</button>
+    <br>
+    <span class="answerBox"><strong>Your Answer is:</strong> <p id="subAnswer"></p></span>
     <br><br>
     <hr>
     <script src="./script.js"></script>
